@@ -84,4 +84,5 @@
   color: #216c8a;
   font-size: 70px;
   font-weight: 700;
+  user-select: none;
 }
