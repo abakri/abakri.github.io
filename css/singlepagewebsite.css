@@ -1,0 +1,7 @@
+mainframe{
+  background-color: #00f4ab
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
