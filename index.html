@@ -1,78 +1,112 @@
 <!DOCTYPE html>
-<html>
-  <!--HEAD-->
-  <head lang="en">
+<html lang="en">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./static/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <title>aslan bakri</title>
+</head>
 
-    <!-- font import -->
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-
-    <!-- favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-    <!-- other imports-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/singlepagewebsite.css">
-  </head>
-
-  <!-- BODY -->
-  <body id="page-top">
-
-    <div class="container-fluid vertical-center" id="home">
-      <div class="container">
-        <h1 id="myname">aslan bakri</h1>
-          <div class="buttonbar d-flex flex-row justify-content-center align-center">
-            <a class="btn btn-primary btn-lg buttonbarbtn" href="misc/Resume.pdf" target="_blank">Resume</a>
-            <a class="btn btn-primary btn-lg buttonbarbtn" href="https://github.com/abakri" target="_blank">Github</a>
-          </div>
-      </div>
+<body>
+  <div class="wrapper">
+    <!-- IF USING PROFILE IMAGE, PLACE HERE -->
+    <!-- <img class="profile-image" src="./static/profile.png" alt="me" /> -->
+    <h1 class="title">aslan bakri</h1>
+    <div class="sub">
+      <p>software engineer</p>
+      <p class="location"><em>new york, ny</em></p>
+      <img id="cat-img" src="./static/cat/1.png" alt="animated cat">
     </div>
 
-    </section>
-
-    <section id="about">
-      <div class="container-fluid", id="aboutcontainer">
-        <div class="media">
-          <img class="d-flex align-self-center mr-3" src="images/me_bike.png" alt="a picture of me!">
-          <div class="media-body">
-            <h1 class="mt-0 text-center"> hi, i'm aslan! </h1>
-            <br>
-            <p>I am an aspiring software engineer specialising in mobile/web development and human computer interaction. My passion
-               lies in creating functional and aesthetic applications, ranging from social apps to indie video games.
-                 I am currently pursuing a Computer Science B.S. degree at the University of Rochester, where I am also part of the rugby team and After Hours a capella group.
-                  I am a music producer and vocalist, and my other hobbies include graphic design, drawing, and snorkeling. In my lifetime,
-                  I have lived in the USA, Indonesia, and Singapore, where I was fortunate to have been chosen as a United World College scholar in UWCSEA. During my time there
-                 I was involved in various different community service groups and have taken various service trips, including a very memorable peace conference in
-                 Timor Leste which I facilitated in. My love for people, cultures, and community has blessed me with so many wonderful memories, whether it be building sanitation systems
-                  in a refugee camp in Chiang Rai, Thailand, climbing Mount Kinabalu in Malaysia, or even just enjoying a snowy winter in Rochester. I am a programmer, but more importantly
-                  I am an innovator, lover of people, adventurer, and I can't wait to see what the future brings me.
+    <table class="portfolio">
+      <tbody>
+        <tr class="section">
+          <td class="section__title links-title">links</td>
+          <td class="section__content">
+            <div class="links">
+              <a class="button" target="_blank" rel="noreferrer" href="https://github.com/abakri">github</a>
+              <a class="button" target="_blank" rel="noreferrer"
+                href="https://www.linkedin.com/in/aslan-bakri/">linkedin</a>
+              <a class="button" target="_blank" rel="noreferrer"
+                href="https://drive.google.com/file/d/1sNQ3ANFsnixMd0aHWCaudh1VDz0mb8De/view?usp=share_link">resume</a>
+              <a class="button" target="_blank" rel="noreferrer" href={linkedinLink}>spotify</a>
+            </div>
+          </td>
+        </tr>
+        <tr class="section">
+          <td class="section__title">about</td>
+          <td class="section__content about">
+            <p>
+              i am a software engineer with a focus on backend applications and systems. most of my
+              experience is working in python and javascript/node stacks. currently, i am building and
+              maintaining the system at <a href="https://www.teampay.co/" target="_blank" rel="noreferrer">teampay</a>
+              that empowers employees to spend money on behalf of their companies.
             </p>
-          </div>
-        </div>
-      </div>
-    </section>
+            <br />
+            <p>
+              i love designing systems, building algorithms and solving difficult engineering
+              problems.
+            </p>
+          </td>
+        </tr>
+        <tr class="section">
+          <td class="section__title">work</td>
+          <td class="section__content">
+            <div>
+              <strong>
+                * currently payments engineer @ <a href="https://www.teampay.co/" target="_blank"
+                  rel="noreferrer">teampay</a>
+              </strong>
+            </div>
+            <div>
+              > internal tooling contractor @ <a href="https://www.teampay.co/" target="_blank"
+                rel="noreferrer">teampay</a>
+            </div>
+            <div>
+              > digital media specialist @ <a href="https://www.rochester.edu/" target="_blank"
+                rel="noreferrer">university
+                of rochester</a>
+            </div>
+          </td>
+        </tr>
+        <tr class="section">
+          <td class="section__title">projects</td>
+          <td class="section__content projects">
+            <div class="project">
+              <div class="project__title">
+                <strong><a href="https://enchanting-flan-db94d9.netlify.app/" target="_blank"
+                    rel="noreferrer">minesweeper
+                    adventure</a></strong>
+              </div>
+              <img class="project__image" src="./static/minesweeper-adventure.png" alt="minesweeper game" />
+              <p>
+                top-down rpg version of minesweeper where a player controls the minesweeper across the
+                map, in search of keys, and avoiding landmines hidden in the tall grass. built in
+                typescript.
+              </p>
+            </div>
+            <div>
+              <div class="project__title">
+                <strong><a href="https://audiovsl.com/" target="_blank" rel="noreferrer">audiovsl</a></strong>
+              </div>
+              <img class="project__image" src="./static/audiovsl.png" alt="audiovsl app" />
+              <p>
+                web app that takes an audio file and image, and converts it into a video. solves
+                pain-point of small music artists and producers that need to quickly create quick
+                videos for their music to post on social media. built with python, react, and utilizes
+                serverless architecture for scalable video conversion.
+              </p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-    <section id="contact">
-      <div class="container-fluid text-center">
-        <h1 style="font-size:50px;">Contact</h1>
-        <p>aslan.bakri@gmail.com <br>
-          <a href="https://www.linkedin.com/in/aslan-bakri-a35a24138/">linkedin</a> <br>
-        </p>
-      </div>
-    </section>
+  <script src="./script.js"></script>
+</body>
 
-    <!-- scripts -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="js/singlepagewebsite.js"></script>
-    <script src="js/smooth-scroll.js"></script>
-    <script> var scroll = new SmoothScroll('a[href*="#"]'); </script>
-  </body>
 </html>
