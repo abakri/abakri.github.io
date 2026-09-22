@@ -4,10 +4,28 @@
 /* VARIABLES */
 
 :root {
-    --light-shadow: #d2b48c;
-    --lightest: #faf9f6;
-    --light: #a3968e;
-    --darkest: #403229;
+    /*BRUTALIST*/
+    --lightest-brutalist: #F9F6EE;
+    --darkest-brutalist: black;
+
+    /*COZY*/
+    --highlight-cozy: #d2b48c;
+    --lightest-cozy: #faf9f6;
+    --light-cozy: #a3968e;
+    --darkest-cozy: #403229;
+
+    --highlight: blue;
+    --lightest: white;
+    --light: var(--light-cozy);
+    --darkest: black;
+}
+
+.pixel-dots {
+    background-image: radial-gradient(var(--light) 40%, transparent 40%);
+    background-size: 4px 4px;
+    /* Controls the grid spacing and dot size */
+    background-color: var(--lightest);
+    /* Optional background color */
 }
 
 /* GLOBALS */
@@ -21,11 +39,11 @@ body {
 /* BUILT-IN */
 a {
     text-decoration: none;
-    color: #1e8beb;
+    color: var(--highlight);
 }
 
 a:hover {
-    color: var(--light-shadow);
+    color: purple;
 }
 
 h1 {
@@ -59,7 +77,7 @@ p {
 }
 
 .button:hover {
-    background-color: var(--light-shadow);
+    background-color: var(--highlight);
     color: white;
 }
 
@@ -105,10 +123,7 @@ p {
 }
 
 /* PORTFOLIO */
-.portfolio {
-    max-width: 50%;
-    margin-top: 20px;
-}
+.portfolio { max-width: 50%; }
 
 .section {
     max-width: 100%;
